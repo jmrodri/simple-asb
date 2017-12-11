@@ -337,7 +337,7 @@ objects:
     url: https://asb.ansible-service-broker.svc:1338/ansible-service-broker/
     authInfo:
       ${{BROKER_AUTH}}
-    caBundle: ${BROKER_CA_CERT}
+    insecureSkipTLSVerify: true
 
 parameters:
 - description: Service Broker CA Cert.
